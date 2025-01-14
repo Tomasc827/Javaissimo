@@ -1,3 +1,8 @@
+package lt.techin.store.model;
+
+import lt.techin.store.exceptions.NameTooLongException;
+import lt.techin.store.exceptions.TaxTooHighException;
+
 public abstract class Product {
     protected String name;
     protected double price;
@@ -73,7 +78,7 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return String.format("\n Name: %s\n Tax: %.2f%%\n Price in Euro: %.2f\n Price in Dollars: %.2f\n Price in Pounds: %.2f",
+        return String.format("\n Type: %s\n Tax: %.2f%%\n Price in Euro: %.2f\n Price in Dollars: %.2f\n Price in Pounds: %.2f",
                 name, tax, calculateTax(), priceInDollarsTax(), priceInPoundsTax());
     }
 

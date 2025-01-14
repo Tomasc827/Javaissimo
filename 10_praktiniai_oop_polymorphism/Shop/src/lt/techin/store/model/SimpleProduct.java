@@ -1,4 +1,6 @@
-public class SimpleProduct extends Product{
+package lt.techin.store.model;
+
+public class SimpleProduct extends Product {
 
 
     public SimpleProduct(String name, double price) {

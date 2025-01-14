@@ -1,4 +1,6 @@
-public class Medicine extends Product{
+package lt.techin.store.model;
+
+public class Medicine extends Product {
 
 
     public Medicine(String name, double price) {

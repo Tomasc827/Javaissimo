@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="601cef25-350d-4694-b05d-5f8c1879f46c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BankAccount/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankAccount/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankAccount/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="601cef25-350d-4694-b05d-5f8c1879f46c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2rbjYVNwbihgn78CIDR3irDNJ2x" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,9 +21,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/D1JP/Desktop/Java/second_week/Javaissimo/10_praktiniai_oop_polymorphism/10_01.DifferentKindsOfBoxes",
+    "last_opened_file_path": "C:/Users/tomas/Desktop/java_nightmare/week_2/10_praktiniai_oop_polymorphism/Shop",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -35,8 +33,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -49,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736834715442</updated>
       <workItem from="1736834716462" duration="62000" />
+      <workItem from="1736868810293" duration="26000" />
     </task>
     <servers />
   </component>
