@@ -11,7 +11,7 @@ public class Main {
         acc.setBalance(new BigDecimal("1000.00"));
         acc.setAnnualInterestRate(new BigDecimal("4.5"));
         try {
-            acc.withdraw(new BigDecimal("1600"));
+            acc.withdraw(new BigDecimal("1501"));
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         }
