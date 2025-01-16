@@ -37,6 +37,10 @@ public class ProtoArrayList<T> {
         return (T) array[index];
     }
 
+    public void lenghty() {
+        System.out.println(this.size);
+    }
+
     @Override
     public String toString(){
         if (size == 0) {
@@ -47,9 +51,9 @@ public class ProtoArrayList<T> {
             sb.append(array[i]).append(", ");
         }
         sb.append(array[size - 1]).append("]");
-        return sb + "\n" + size + "\n" + currentCapacity();
+        return sb + "\n" + totalCapacity();
     }
-    public int currentCapacity() {
+    public int totalCapacity() {
         return array.length;
     }
 
