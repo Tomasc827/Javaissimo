@@ -29,4 +29,9 @@ public class Book {
         return pageCount;
     }
 
+    @Override
+    public String toString(){
+      return " Name: " + name + "\n Year: " + publishingYear + "\n Author: " + author + "\n Page Count: " + pageCount;
+    };
+
 }
