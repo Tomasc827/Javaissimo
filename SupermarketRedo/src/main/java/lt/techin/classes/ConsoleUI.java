@@ -119,7 +119,6 @@ public class ConsoleUI {
             ssi.addPayment(amount);
             System.out.printf("Added %.2f£\n", amount);
             System.out.printf("Remaining Payment: %.2f£\n", ssi.getRemainingPayment());
-            scan.close();
         } catch (IllegalArgumentException e){
             System.out.println("Error: " + e.getMessage());
         }

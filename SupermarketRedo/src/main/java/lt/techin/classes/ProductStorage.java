@@ -15,7 +15,10 @@ public class ProductStorage {
 
     }
 
-    public void addProduct(Product product) {
+    public void addProduct(String name, double price, String id, int initialStock) {
+        Product product = new Product(name, price, id);
+        products.put(id, product);
+        inventory.put(id, initialStock);
     }
 
     public void initialProducts() {

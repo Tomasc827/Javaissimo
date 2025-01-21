@@ -69,6 +69,10 @@ public class CashRegister {
             change.forEach((x1,x2) -> coins.put(x1,coins.get(x1) + x2));
             throw new NotEnoughChangeExceptions("Cannot provide exact change");
         }
+        System.out.println("\nChange provided:");
+        change.forEach((coin, count) ->
+                System.out.printf("%.2f£ x %d\n", coin.getValue(), count));
+        System.out.printf("Total change: %.2f£\n", changeAmount);
          return change;
     }
 
