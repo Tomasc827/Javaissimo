@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface Greeter {
+    String greet(String fn,String ln);
 }

@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public class Dot implements getEnding{
 
-public class Dot {
+
+    @Override
+    public String ending() {
+        return ".";
+    }
 }

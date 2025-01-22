@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+abstract class Greeter {
 
-public class Greeter {
+    public void greet(String fn, String ln) {
+        System.out.println(getGreetingsString() + fn + " " + ln );
+    }
+
+    protected abstract String getGreetingsString();
 }
