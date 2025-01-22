@@ -104,15 +104,17 @@ public class ConsoleUI {
 
     }
     public void payment() {
-        System.out.println("Select amount: \n 1. 0.10£ \n 2. 0.50£" +
-                "\n 3. 1.00£ \n 4. 2.00£");
+        System.out.println("Select amount: \n 1. 0.10£ \n 2. 0.20£ \n 3. 0.50£" +
+                "\n 4. 1.00£ \n 5. 2.00£ \n 6. 5.00£");
         int input = Integer.parseInt(scan.nextLine().trim());
         double amount = 0;
         switch (input) {
             case 1 -> amount = 0.10;
-            case 2 -> amount = 0.50;
-            case 3 -> amount = 1.00;
-            case 4 -> amount = 2.00;
+            case 2 -> amount = 0.20;
+            case 3 -> amount = 0.50;
+            case 4 -> amount = 1.00;
+            case 5 -> amount = 2.00;
+            case 6 -> amount = 5.00;
             default -> System.out.println("Invalid selection");
         }
         try {

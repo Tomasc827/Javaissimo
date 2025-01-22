@@ -13,8 +13,4 @@ public class ProductStorageTest {
         productStorage = new ProductStorage();
     }
 
-    @Test
-    @DisplayName()
-
-
 }

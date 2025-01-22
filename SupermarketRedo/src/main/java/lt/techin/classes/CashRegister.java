@@ -19,9 +19,11 @@ public class CashRegister {
 
     private void initialCoins() {
         coins.put(Coins.TEN_CENT,50);
+        coins.put(Coins.TWENTY_CENT,35);
         coins.put(Coins.FIFTY_CENT,30);
         coins.put(Coins.POUND,15);
         coins.put(Coins.TWO_POUND,10);
+        coins.put(Coins.Five_POUND,5);
     }
 
     public HashMap<Coins, Integer> getCoins() {
@@ -51,9 +53,11 @@ public class CashRegister {
         double remaining = changeAmount;
 
         Coins[] sorted = new Coins[] {
+                Coins.Five_POUND,
                 Coins.TWO_POUND,
                 Coins.POUND,
                 Coins.FIFTY_CENT,
+                Coins.TWENTY_CENT,
                 Coins.TEN_CENT
         };
 
@@ -69,10 +73,10 @@ public class CashRegister {
             change.forEach((x1,x2) -> coins.put(x1,coins.get(x1) + x2));
             throw new NotEnoughChangeExceptions("Cannot provide exact change");
         }
-        System.out.println("\nChange provided:");
+        System.out.println("\nChange Provided:");
         change.forEach((coin, count) ->
                 System.out.printf("%.2f£ x %d\n", coin.getValue(), count));
-        System.out.printf("Total change: %.2f£\n", changeAmount);
+        System.out.printf("Total Change: %.2f£\n", changeAmount);
          return change;
     }
 
