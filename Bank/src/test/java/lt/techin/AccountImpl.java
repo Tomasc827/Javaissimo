@@ -9,7 +9,7 @@ public class AccountImpl implements Account {
 
     private String number;
     private String name;
-    private BigDecimal balance;
+    protected BigDecimal balance;
 
     public AccountImpl(String name,BigDecimal balance) {
         if (name == null || balance == null) {
@@ -60,7 +60,7 @@ public class AccountImpl implements Account {
     @Override
     public boolean withdraw(BigDecimal amount) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) < 0) {
-            return false;
+           return false;
         }
         if (balance.compareTo(amount) < 0) {
             return false;

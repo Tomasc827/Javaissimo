@@ -47,8 +47,7 @@ public class Siaulia implements Bank {
     @Override
     public Account openCreditAccount(String accountHolderName, BigDecimal creditLimit) {
         if (extracted(accountHolderName)) return null;
-        Account newAccount = new AccountImpl(accountHolderName, BigDecimal.ZERO);
-        CreditAccount creditAccount = new CreditAccount(newAccount,creditLimit);
+        CreditAccount creditAccount = new CreditAccount(accountHolderName, creditLimit);
         accounts.add(creditAccount);
         return creditAccount;
     }
