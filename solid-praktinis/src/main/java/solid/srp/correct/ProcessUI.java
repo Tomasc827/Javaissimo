@@ -1,7 +1,6 @@
 package solid.srp.correct;
 
 import solid.srp.correct.transformation.Transform;
-import solid.srp.correct.transformation.TransformType;
 import solid.srp.correct.transformation.Transformation;
 import solid.srp.correct.transformationtypes.Lowercase;
 import solid.srp.correct.transformationtypes.Split;

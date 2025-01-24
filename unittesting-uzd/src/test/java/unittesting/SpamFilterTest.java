@@ -65,12 +65,8 @@ public class SpamFilterTest {
     }
     @Test
     public void testNoMessagesAreSpam() {
-        SpamFilterPolicy noSpamPolicy = new SpamFilterPolicy() {
-            @Override
-            public boolean isSpam(Message message) {
-                return false;
-            }
-        };
+
+        SpamFilterPolicy noSpamPolicy = m -> false;
         List<Message> messages = Arrays.asList(
                 new Message("Subject1", "Text1"),
                 new Message("Subject2", "Text2"),
@@ -84,12 +80,7 @@ public class SpamFilterTest {
 
     @Test
     public void testSomeSpamMessages() {
-        SpamFilterPolicy selectiveSpamPolicy = new SpamFilterPolicy() {
-            @Override
-            public boolean isSpam(Message message) {
-                return message.getSubject().contains("spam");
-            }
-            };
+       SpamFilterPolicy someSpamPolicy = m -> true;
             List<Message> messages = Arrays.asList(new Message("spam","text"),
                     new Message("spam2","text2"),
                     new Message("nice","text3")
